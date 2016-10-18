@@ -15,3 +15,8 @@ class DoubanSpider(scrapy.Spider):
         filename = response.url.split("/")[-2]
         with open(filename, 'wb') as f:
             f.write(response.body)
+		print "xxx"
+		
+		
+if __name__ == "__main__":
+	pass
